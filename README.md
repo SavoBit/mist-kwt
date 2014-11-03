@@ -1,6 +1,6 @@
 # kws-transforms
 
-A Clojure Library to read messages from Kafka websocket
+A Transform for mist
 
 ## Usage
 

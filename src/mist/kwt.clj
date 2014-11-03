@@ -1,7 +1,9 @@
-(ns kwt.mist
+(ns mist.kwt
   (require '[clojure.data.codec.base64 :as b64]
            '[clojure.java.io :as io])
-  (require '[kwt.core :as kwt]))
+  (:gen-class
+   :extends us.b3k.kafka.ws.transforms.Transform
+   :name mist.kwt.Transform))
 
 (defn unbase64 [m]
   (b64/decode m))
@@ -14,13 +16,12 @@
   (when m
     (to-byte-array (InflaterInputStream. (ByteArrayInputStream. m)))))
 
-(defn transform [msg]
+(defn ->json [msg]
   (-> msg
       unbase64
       remove-first-byte
       zlib-inflate))
 
-(kwt/route {:route :kafka
-            :host  "localhost"
-            :port  8999}
-           (transform msg))
+(proxy [Transform]
+      (transform [^TextMessage msg ^Session session]
+                 (->json msg)))
