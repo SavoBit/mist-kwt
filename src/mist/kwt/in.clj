@@ -1,9 +1,9 @@
-(ns mist.kwt
+(ns mist.kwt.in
   (require '[clojure.data.codec.base64 :as b64]
            '[clojure.java.io :as io])
   (:gen-class
    :extends us.b3k.kafka.ws.transforms.Transform
-   :name mist.kwt.Transform))
+   :name mist.kwt.in.Transform))
 
 (defn unbase64 [m]
   (b64/decode m))
