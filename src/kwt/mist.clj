@@ -1,4 +1,4 @@
-(ns kwt.example
+(ns kwt.mist
   (require '[clojure.data.codec.base64 :as b64]
            '[clojure.java.io :as io])
   (require '[kwt.core :as kwt]))
