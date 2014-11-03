@@ -14,7 +14,7 @@
   (when m
     (to-byte-array (InflaterInputStream. (ByteArrayInputStream. m)))))
 
-(defn extract [msg]
+(defn transform [msg]
   (-> msg
       unbase64
       remove-first-byte
