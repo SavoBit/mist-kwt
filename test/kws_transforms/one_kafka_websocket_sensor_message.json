@@ -1,0 +1,58 @@
+{
+  "SensorData" : {
+    "Magnetometer" : {
+      "Z" : 0,
+      "TimeInterval" : 0,
+      "Y" : 0,
+      "SensorType" : "Magnetometer",
+      "X" : 0
+    },
+    "Gyroscope" : {
+      "Z" : 0,
+      "TimeInterval" : 0,
+      "Y" : 0,
+      "SensorType" : "Gyroscope",
+      "X" : 0
+    },
+    "DeviceMotion" : {
+      "AttitudeRotationMatrixM22" : 0,
+      "AttitudeRotationMatrixM31" : 0,
+      "AttitudePitch" : 0,
+      "RotationRateY" : 0,
+      "AttitudeRotationMatrixM12" : 0,
+      "GravityX" : 0,
+      "AttitudeRotationMatrixM21" : 0,
+      "AttitudeYaw" : 0,
+      "AttitudeRoll" : 0,
+      "MagneticFieldX" : 0,
+      "RotationRateX" : 0,
+      "AttitudeRotationMatrixM11" : 0,
+      "AttitudeQuaternionW" : 0,
+      "GravityY" : 0,
+      "AccelerationZ" : 0,
+      "AttitudeQuaternionY" : 0,
+      "MagneticFieldZ" : 0,
+      "AccelerationY" : 0,
+      "AttitudeRotationMatrixM33" : 0,
+      "TimeInterval" : 0,
+      "GravityZ" : 0,
+      "AccelerationX" : 0,
+      "AttitudeRotationMatrixM23" : 0,
+      "AttitudeRotationMatrixM32" : 0,
+      "MagneticFieldY" : 0,
+      "AttitudeQuaternionX" : 0,
+      "AttitudeRotationMatrixM13" : 0,
+      "RotationRateZ" : 0,
+      "AttitudeQuaternionZ" : 0
+    },
+    "Accerometer" : {
+      "Z" : 0,
+      "TimeInterval" : 0,
+      "Y" : 0,
+      "SensorType" : "Accelerometer",
+      "X" : 0
+    }
+  },
+  "Date" : "2014-12-17T05:13:07.511Z",
+  "Device" : "7E544E01-6072-4244-B35E-0D460D75F0D3"
+}
